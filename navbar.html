@@ -1,72 +1,96 @@
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-black p-0">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-            <img src="Assets/coad-&-coach-light-logo.png" alt="Logo" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-white"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 pe-5 me-4">
-                <li class="nav-item nav-li">
-                    <a class="nav-link nav-a mx-3" href="../index.html">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: sans-serif; 
+        }
+        
+        .login .btn{
+            border-radius: 20px;
+            color: white;
+            background-color: #ff6c29;
+        }
+       
+        .nav-link{
+            font-family: sans-serif;
+            color: rgb(30, 30, 29);
+        }
+        .nav-link:hover{
+            color: #ff6c29;
+        }
+        .nav-second{
+            background-color: #9a2326;
+        }
+        .inside-nav{
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid ps-0 pe-0">
+        <section class="nav-main ps-0 pe-0">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="/assests/logo-brla.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link  fs-5 pe-5"  href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5 pe-5" href="#">About BOMIS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  fs-5 pe-5" href="#">News</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link  fs-5 pe-5" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  
+                  </div>
+                  <div class="login">
+                    <a href="#"><button type="button" class="btn fs-5 mb-3 me-5 pt-1 pb-1 ps-3 pe-3">login</button></a>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <section class="nav-second">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link inside-nav fs-6 ps-4 pe-2"  href="#">OUR TEAM</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a mx-3" href="../aboutus.html">About Us</a>
+                  <a class="nav-link inside-nav fs-6 ps-4 pe-3" href="#">ONLINE ADMISSION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a mx-3" href="../ourservice.html">Our Services</a>
+                  <a class="nav-link inside-nav fs-6 ps-4 pe-3" href="#">EXAM RESULTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a mx-3" href="../portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a mx-3" href="../contactus.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+                    <a class="nav-link inside-nav fs-6 ps-4 pe-3" href="#">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link inside-nav fs-6 ps-4 pe-3" href="#">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link inside-nav fs-6 ps-4 pe-3" href="#">NEWS</a>
+                  </li>
+                
+              </ul>
+        </section>
     </div>
-</nav>
 
 
-
-<style>
-    .logo {
-        width: 15rem;
-    }
-
-    .nav-a {    
-        color: rgb(255, 255, 255);
-        transition: 0.3s;
-    }
-    
-    .nav-a:hover, .nav-a.active {
-        color: rgb(197, 196, 196);
-    }
-
-    @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
-        .logo {
-            width: 12rem;
-        }
-
-        form {
-            margin-bottom: 1rem;
-        }
-    }
-</style>
-
-<!-- JavaScript for Active Page Highlighting -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let navLinks = document.querySelectorAll(".nav-a");
-        let currentURL = window.location.href;
-
-        navLinks.forEach(link => {
-            if (link.href === currentURL) {
-                link.classList.add("active");
-            }
-        });
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
