@@ -15,10 +15,10 @@ fetch('footer.html')
 })
 
 
-document.addEventListener('contextmenu', function (event) {
-    event.preventDefault(); // Disable right-click menu
-});
+// document.addEventListener('contextmenu', function (event) {
+//     event.preventDefault(); // Disable right-click menu
+// });
 
-document.addEventListener('copy', function (event) {
-    event.preventDefault(); // Disable copying
-});
+// document.addEventListener('copy', function (event) {
+//     event.preventDefault(); // Disable copying
+// });
