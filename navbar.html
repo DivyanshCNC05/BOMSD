@@ -20,30 +20,37 @@
   .nav-second{
       background-color: #9a2326;
   }
+  
   @media only screen   
   and (min-device-width : 320px)   
   and (max-device-width : 640px)  
   { 
-    .nav-main{
+    .nav-second, .nav-main{
       display: none;
     }
-    .nav-second{
-      display: none;
-    }
-    .short-nav{
-      visibility: visible;
-    }
-    
   }
 
-  .short-nav{
-   visibility: hidden;
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { 
+    .short-nav{
+      display: none;
+    }
   }
+
+
 
 
 </style>
 
 <div class="container-fluid ps-0 pe-0">
+
   <section class="nav-main ps-0 pe-0">
       <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
@@ -74,6 +81,7 @@
           </div>
         </nav>
   </section>
+  
   <section class="nav-second">
     <div class="nav-secondv ">
       <ul class="nav justify-content-center">
