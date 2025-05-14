@@ -78,6 +78,28 @@
   line-height: 1.6;
 }
 
+.wcu-1{
+  background-color: #ad2627;
+}
+.wcu-2{
+  background-color: #c9402b;
+}
+.wcu-3{
+  background-color: #f05c2b;
+}
+.wcu-4{
+  background-color: #ec802a;
+}
+.wcu-5{
+  background-color: #f9a226;
+}
+.wcu-6{
+  background-color: #ad2627;
+}
+.wcu-img{
+  width: 2%;
+}
+
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {}
