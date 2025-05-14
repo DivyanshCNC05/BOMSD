@@ -1,0 +1,79 @@
+ <style>
+    .tab-button {
+      border: none;
+      background: linear-gradient(to right, #f36d00, #fba919);
+      color: white;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 25px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .tab-button.active {
+      background: white;
+      color: black;
+      border: 2px solid #f36d00;
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: flex;
+    }
+
+    .check-icon {
+      color: #f36d00;
+      margin-right: 5px;
+    }
+  </style>
+
+
+<div class="container py-5">
+  <!-- Tabs -->
+  <div class="d-flex justify-content-center mb-5">
+    <button class="tab-button active" data-tab="hallmark">HALLMARK</button>
+    <button class="tab-button" data-tab="centered">CENTERED</button>
+    <button class="tab-button" data-tab="character">CHARACTER</button>
+  </div>
+
+  <!-- Content Sections -->
+  <div id="hallmark" class="row content-section active">
+    <div class="col-md-6">
+      <h2><strong>Joy of Learning</strong></h2>
+      <p>Restores what Tagore called the hallmark of childhood - ‘joy of learning’ and the ‘creative spirit’</p>
+      <p><span class="check-icon">✔</span> Encourages children to explore, imagine, and express themselves, igniting a lifelong love for knowledge and self-expression.</p>
+      <p><span class="check-icon">✔</span> Promotes a Positive Learning Environment: Focuses on the process of learning, making education engaging, enjoyable, and fulfilling, while respecting each child's unique pace and individuality.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="80858498-bb96-4ea1-89f7-e15557b39829.png" alt="Hallmark Image" class="img-fluid rounded">
+    </div>
+  </div>
+
+  <div id="centered" class="row content-section">
+    <div class="col-md-6">
+      <h2><strong>Child-Centered Approach</strong></h2>
+      <p>Focuses on the holistic development of every child based on their interests and potential.</p>
+      <p><span class="check-icon">✔</span> Encourages curiosity, critical thinking, and hands-on learning experiences.</p>
+      <p><span class="check-icon">✔</span> Builds confidence by honoring each child’s voice and allowing choices in their learning journey.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://via.placeholder.com/500x300.png?text=Centered+Image" alt="Centered Image" class="img-fluid rounded">
+    </div>
+  </div>
+
+  <div id="character" class="row content-section">
+    <div class="col-md-6">
+      <h2><strong>Building Character</strong></h2>
+      <p>Instills values and integrity along with academic learning.</p>
+      <p><span class="check-icon">✔</span> Fosters empathy, resilience, and a strong moral compass.</p>
+      <p><span class="check-icon">✔</span> Encourages teamwork, responsibility, and ethical leadership from a young age.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://via.placeholder.com/500x300.png?text=Character+Image" alt="Character Image" class="img-fluid rounded">
+    </div>
+  </div>
+</div>
+

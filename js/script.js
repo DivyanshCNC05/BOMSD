@@ -14,6 +14,14 @@ fetch('footer.html')
     footer.innerHTML=data
 })
 
+// const tabs = document.querySelector('.tabs')
+// fetch('tab.html')
+// .then(res=>res.text())
+// .then(data=>{
+//     footer.innerHTML=data
+// })
+
+
 
 // document.addEventListener('contextmenu', function (event) {
 //     event.preventDefault(); // Disable right-click menu
