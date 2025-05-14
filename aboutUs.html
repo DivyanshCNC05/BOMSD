@@ -50,8 +50,9 @@
     }
 
     .heading {
-        background-color: #fc6f27;
-        color: white;
+        background: #F1DE4D;
+        background: linear-gradient(90deg, rgba(241, 222, 77, 1) 29%, rgba(255, 84, 30, 1) 73%);
+        color: rgb(255, 255, 255);
     }
 
     .hd-second .colum-one {
@@ -60,21 +61,30 @@
         border-radius: 20px;
         margin-top: 50px;
         color: rgb(55, 53, 53);
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
     }
 
-    .hd-second .colum-one h2 {
-        color: #ad2627;
+    .hd-second .colum-one h1 {
+        color: #e8681e;
+    }
+
+    .head {
+        color: rgb(144, 140, 140);
     }
 </style>
 
 <body>
-    <div class="container-fluid cust-container p-0">
+    <div class="container-fluid cust-container p-0 m-0">
         <!-- navbar section start  -->
         <nav class="test_nav "></nav>
         <!-- navbar section ends  -->
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="top-section">
             <div class="row">
                 <div class="col-6">
@@ -97,8 +107,8 @@
 
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="about-img pt-5 mt-5 pb-5">
+                <div class="col-6 p-0">
+                    <div class="about-img pt-5 mt-5 pb-5 pe-0 ps-0">
                         <img src="assests/aboutusimage2.png " height="460px" width="500px" alt="">
                     </div>
                 </div>
@@ -136,31 +146,30 @@
         </div>
 
         <div class="container-fluid heading m-0">
-            <div class="hd">
-                <div class="row text-center">
-                    <h2>Our Journey At Glance</h2>
+            <div class="hd pt-5 mt-5 ">
+                <div class="row text-center pt-5">
+                    <h1>Our Journey At Glance</h1>
                 </div>
             </div>
-            <div class="hd-second">
+            <div class="hd-second pt-5 ">
                 <!-- first column -->
                 <div class="row ">
                     <div class="col-6 colum-one mb-5">
-                        <div class="row text-center">
-                            <h2>Innovative Curriculum and Teaching <br> Methods:</h2>
-                            <p><b>Modern Curriculum:</b> <br>
-                                Our school offers a curriculum that goes beyond traditional subjects, <br> incorporating
+                        <div class="row ">
+                            <h1 class="text-center">Innovative Curriculum and Teaching Methods:</h1>
+                            <p class="head">Modern Curriculum: </p>
+                            <p>Our school offers a curriculum that goes beyond traditional subjects, incorporating
                                 modern
-                                topics such as coding, robotics, environmental <br> science, and global studies. This
-                                ensures <br>
-                                students are well-prepared for the future..</p>
-                            <p><b>Activity - Based Learning:</b> <br>
-                                We emphasize hands-on, experiential learning where students engage in projects that
+                                topics such as coding, robotics, environmental science, and global studies. This
+                                ensures students are well-prepared for the future..</p>
+                            <p class="head">Activity - Based Learning: </p>
+                            <p> We emphasize hands-on, experiential learning where students engage in projects that
                                 require critical thinking, collaboration, and real-world problem-solving..</p>
-                            <p><b>STEM Education:</b> <br>
-                                We focus on Science, Technology, Engineering, and Mathematics (STEM) to equip students
+                            <p class="head">STEM Education: </p>
+                            <p> We focus on Science, Technology, Engineering, and Mathematics (STEM) to equip students
                                 with skills that are essential in the 21st century..</p>
-                            <p><b>Interdisciplinary Approach:</b> <br>
-                                We adopt teaching methods that integrate various subjects, helping students make
+                            <p class="head">Interdisciplinary Approach: </p>
+                            <p> We adopt teaching methods that integrate various subjects, helping students make
                                 connections across different areas of knowledge.</p>
                         </div>
                     </div>
@@ -171,15 +180,17 @@
                 <div class="row  ">
                     <div class="col-6 mb-5"></div>
                     <div class="col-6 colum-one mb-5 ">
-                        <div class="row">
-                            <h2>Highly Qualified and Passionate Faculty:    </h2>
-                            <p><b>Experienced Educators:</b> <br>
-                                Our faculty members hold degrees and certifications in their respective fields, ensuring high-quality instruction.</p>
-                            <p><b>Professional Development:</b> <br>
-                                We conduct workshops, seminars, and training programs to teachers to stay updated with the latest educational trends and techniques.</p>
-                            <p><b>Mentorship Programs:</b> <br>
-                               Faculty act as mentors, providing personalized guidance and support to students.</p>
-                    
+                        <div class="row ">
+                            <h1 class="text-center pb-4">Highly Qualified and Passionate Faculty: </h1>
+                            <p class="head">Experienced Educators: <br></p>
+                            <p>Our faculty members hold degrees and certifications in their respective fields, ensuring
+                                high-quality instruction.</p>
+                            <p class="head">Professional Development: </p>
+                            <p>We conduct workshops, seminars, and training programs to teachers to stay updated with
+                                the latest educational trends and techniques.</p>
+                            <p class="head">Mentorship Programs: </p>
+                            <p> Faculty act as mentors, providing personalized guidance and support to students.</p>
+
                         </div>
                     </div>
                 </div>
@@ -187,18 +198,21 @@
                 <!-- third column -->
                 <div class="row ">
                     <div class="col-6 colum-one mb-5">
-                        <div class="row">
-                            <h2>State-of-the-Art Facilities and Resources:</h2>
-                            <p><b>Advanced Science Labs:</b> <br>
-                              Our labs are equipped with the latest technology and tools for hands-on experiments and research.</p>
-                            <p><b>Modern Classrooms:</b> <br>
-                               Interactive whiteboards, and high-speed internet to facilitate digital learning.</p>
-                            <p><b>Library:</b> <br>
-                                A well-stocked library with a diverse collection of books, digital resources, and comfortable reading spaces.</p>
-                            <p><b>Sports Facilities:</b> <br>
-                               Comprehensive sports infrastructure including both indoor and outdoor facilities.</p>
-                            <p><b>Creative Arts Spaces:</b> <br>
-                               Dedicated spaces for music, dance, and visual arts, encouraging creativity and artistic expression.</p>
+                        <div class="row pb-2">
+                            <h1 class="text-center pt-4">State-of-the-Art Facilities and Resources:</h1>
+                            <p class="head">Advanced Science Labs:</p>
+                            Our labs are equipped with the latest technology and tools for hands-on experiments and
+                            research.</p>
+                            <p class="head">Modern Classrooms:</p>
+                            <p>Interactive whiteboards, and high-speed internet to facilitate digital learning.</p>
+                            <p class="head">Library:</p>
+                            <p> A well-stocked library with a diverse collection of books, digital resources, and
+                                comfortable reading spaces.</p>
+                            <p class="head">Sports Facilities:</p>
+                            <p>Comprehensive sports infrastructure including both indoor and outdoor facilities.</p>
+                            <p class="head">Creative Arts Spaces:</p>
+                            <p> Dedicated spaces for music, dance, and visual arts, encouraging creativity and artistic
+                                expression.</p>
                         </div>
                     </div>
                     <div class="col-6 mb-5 "></div>
@@ -206,16 +220,26 @@
 
                 <!-- fourth column -->
                 <div class="row ">
-                    <div class="col-6 mb-5"></div>
+                    <div class="col-6 mb-2"></div>
                     <div class="col-6 colum-one mb-5 ">
-                        <div class="row">
-                            <h2>Innovative Curriculum and Teaching <br> Methods:</h2>
-                            <p><b>Modern Curriculum:</b> <br>
-                                Our school offers a curriculum that goes beyond traditional subjects, <br> incorporating
-                                modern
-                                topics such as coding, robotics, environmental <br> science, and global studies. This
-                                ensures <br>
-                                students are well-prepared for the future..</p>
+                        <div class="row ">
+                            <h1 class="text-center">Comprehensive Extracurricular Programs:</h1>
+                            <p class="head">Diverse Activities:</p>
+                            A wide range of activities are organized, from debate and drama , to environmental
+                            activities including theme based field trips catering to varied interests</b> <br>
+                            Interactive whiteboards, and high-speed internet to facilitate digital learning.</p>
+                            <p class="head">Sports Programs:</p>
+                            Competitive and recreational sports activities that promote physical fitness, teamwork, and
+                            school spirit.</b> <br>
+                            <p class="head">Arts and Culture:</p>
+                            <p> Opportunities for students to engage in music, dance and visual arts, fostering their
+                                creative talents.</p>
+                            <p class="head">Community Service:</p>>
+                            <p>Programs that encourage students to participate in service projects, instilling a sense
+                                of responsibility and empathy.</p>
+                            <p class="head">Leadership Opportunities:</p>
+                            <p>Positions in student government, peer mentoring, and other leadership roles that build
+                                confidence and leadership skills.</p>
                         </div>
                     </div>
                 </div>
@@ -223,14 +247,16 @@
                 <!-- fivth column -->
                 <div class="row ">
                     <div class="col-6 colum-one mb-5">
-                        <div class="row">
-                            <h2>Innovative Curriculum and Teaching <br> Methods:</h2>
-                            <p><b>Modern Curriculum:</b> <br>
-                                Our school offers a curriculum that goes beyond traditional subjects, <br> incorporating
-                                modern
-                                topics such as coding, robotics, environmental science, <br> and global studies. This
-                                ensures
-                                students <br> are well-prepared for the future..</p>
+                        <div class="row ">
+                            <h1 class="text-center">Strong Community and Parental Engagement::</h1>
+                            <p class="head">Parental Involvement:</p>
+                            <p> Regular parent-teacher meetings and events that encourage active participation in the
+                                school community .</p>
+                            <p class="head">Communication Channels:</p>
+                            <p> Effective use of newsletters, parent portals, and social media to keep families informed
+                                and engaged on the school front which creates a supportive and collaborative educational
+                                ecosystem.</p>
+
                         </div>
                     </div>
                     <div class="col-6 mb-5 "></div>
@@ -240,23 +266,17 @@
                 <div class="row ">
                     <div class="col-6 mb-5"></div>
                     <div class="col-6 colum-one mb-5 ">
-                        <div class="row">
-                            <h2>Innovative Curriculum and Teaching <br> Methods:</h2>
-                            <p><b>Modern Curriculum:</b> <br>
-                                Our school offers a curriculum that goes beyond traditional subjects, <br> incorporating
-                                modern
-                                topics such as coding, robotics, environmental <br> science, and global studies. This
-                                ensures <br>
-                                students are well-prepared for the future..</p>
-                            <p><b>Activity - Based Learning:</b> <br>
-                                We emphasize hands-on, experiential learning where students engage in projects that
-                                require critical thinking, collaboration, and real-world problem-solving..</p>
-                            <p><b>STEM Education:</b> <br>
-                                We focus on Science, Technology, Engineering, and Mathematics (STEM) to equip students
-                                with skills that are essential in the 21st century..</p>
-                            <p><b>Interdisciplinary Approach:</b> <br>
-                                We adopt teaching methods that integrate various subjects, helping students make
-                                connections across different areas of knowledge.</p>
+                        <div class="row ">
+                            <h1 class="text-center">Personalized Learning and Support Services:</h1>
+                            <p class="head">Individualized Learning Plans:</p>
+                            <p> Tailored educational plans that address each student’s strengths, weaknesses, and
+                                learning styles to maximize their potential.</p>
+                            <p class="head">Academic Support</p>>
+                            <p> Access to monitoring counseling, and special education services to support students with
+                                diverse learning needs</p>
+                            <p class="head">Small Class Sizes:</p>
+                            <p> Lower student-to-teacher ratios that ensure personalized attention and a more
+                                interactive learning experience.</p>
 
                         </div>
                     </div>
