@@ -37,9 +37,9 @@
 
         .message-box {
             background: linear-gradient(to right, #ffb347, #ff5733);
-            border-radius: 15px;
+            border-radius: 0;
             padding: 30px;
-            color: #000;
+            color: #000000;
         }
 
         .chairman-img {
@@ -75,19 +75,18 @@
       border-radius: 20px;
     }
 
-    .team-member {
+    /* .team-member {
       text-align: center;
       margin-bottom: 40px;
-    }
+    } */
 
-    .team-member img {
+    /* .team-member img {
       background-color: #b41e1e;
-      border-radius: 8px;
       padding: 10px;
       width: 180px;
       height: 220px;
       object-fit: cover;
-    }
+    } */
 
     .team-member h5 {
       margin-top: 15px;
@@ -111,6 +110,35 @@
       padding: 10px 15px;
       cursor: pointer;
     }
+    .team-member {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+   text-align: center;
+      margin-bottom: 40px;
+}
+
+.team-member::before {
+  content: "";
+  position: absolute;
+  top: 85px;   /* Push background slightly down */
+  left: 72px;  /* Push background slightly right */
+  width: 190px;
+  height: 135px;
+  background-color: #b41e1e;
+    
+  z-index: -1; /* Put it behind the image */
+}
+
+.team-member img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
     </style>
 </head>
 
@@ -126,11 +154,11 @@
         <div class="underline"></div>
 
         <div class="row align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-2 rounded-end">
                 <img src="assests/director.png" alt="Chairman" class="chairman-img shadow" />
             </div>
-            <div class="col-md-7">
-                <div class="message-box shadow">
+            <div class="col-md-10">
+                <div class="message-box shadow rounded-end">
                     <h3><strong>Dr. Neha Sharma</strong></h3>
                     <p><strong>Director</strong><br>
                         <strong>Birla Open Minds Education Pvt Ltd</strong>
