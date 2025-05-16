@@ -1,63 +1,36 @@
-.about-content {
-        padding-top: 130px;
-    }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .tp-heading {
-        color: #f05c2b;
-        font-weight: bold;
-    }
+  .hero-subtitle{
+    color: #f05c2b;
+    font-weight: 700;
+    margin-top: 10%;
+  }
+  .hero-title{
+    font-size: 3rem;
+  }
 
-    .sec-heading {
-        font-size: 2.9rem;
-        color: rgb(78, 75, 75);
-        font-family: sans-serif;
-        font-weight: bold;
-    }
+  .border-style{
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 0.5%;
+  }
+  
+  
+  @media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  { }
 
-    .second-top h1 {
-        color: #f05c2b;
 
-    }
 
-    .vission {
-        border: 1px solid rgb(106, 101, 101);
-        border-radius: 20px;
-        margin-top: 40px;
-    }
 
-    .vission h4 {
-        align-items: center;
-    }
 
-    .vission i {
-        color: #f05c2b;
-        align-items: left;
-        height: 20px;
-    }
 
-    .heading {
-        background: #F1DE4D;
-        background: linear-gradient(90deg, rgba(241, 222, 77, 1) 29%, rgba(255, 84, 30, 1) 73%);
-        color: rgb(255, 255, 255);
-    }
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { }
 
-    .hd-second .colum-one {
-        background-color: white;
-        border: 2px solid #fc6f27;
-        border-radius: 20px;
-        margin-top: 50px;
-        color: rgb(55, 53, 53);
-        height: 560px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px;
-    }
-
-    .hd-second .colum-one h1 {
-        color: #e8681e;
-    }
-
-    .head {
-        color: rgb(144, 140, 140);
-    }
