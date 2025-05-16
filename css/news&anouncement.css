@@ -1,0 +1,28 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hero-h1{
+    font-size: 3rem;
+    color: #f05c2b;
+    font-weight: 700;
+    margin-top: 2%;
+  }
+  
+  @media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  { }
+
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { }
+
