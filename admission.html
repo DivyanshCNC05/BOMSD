@@ -40,6 +40,53 @@
       background-color: #f05c2b;
       border: none;
     }
+    /* Carousel container: hides overflow */
+.carousel {
+  overflow: hidden;
+  width: 100%;           /* full width (or adjust as needed) */
+  box-sizing: border-box;
+}
+
+/* Flex track: holds all slides in one row */
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite; /* continuous scroll */
+}
+
+/* Each slide: show multiple per row via flex-basis */
+.slide {
+  flex: 0 0 20%;         /* 5 slides on wide screens */
+}
+
+/* Ensure images fill their slides */
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Animation: shift left by 50% (i.e. one set of slides) */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Breakpoints for responsiveness */
+@media (max-width: 992px) {
+  .slide {
+    flex: 0 0 33.333%;   /* 3 slides per view */
+  }
+}
+@media (max-width: 600px) {
+  .slide {
+    flex: 0 0 50%;       /* 2 slides per view */
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 100%;      /* 1 slide per view */
+  }
+}
+
   </style>
 </head>
 
@@ -61,7 +108,18 @@
       <div class="col-md-3">
         <label for="class" class="form-label">Class <span class="text-danger">*</span></label>
         <select class="form-select" id="class" required>
-          <option selected disabled>Select</option>
+          <option selected >Nursery</option>
+          <option selected >LKG</option>
+          <option selected >UKG</option>
+          <option selected >1</option>
+          <option selected >2</option>
+          <option selected >3</option>
+          <option selected >4</option>
+          <option selected >5</option>
+          <option selected >6</option>
+          <option selected >7</option>
+          <option selected >8</option>
+          <option selected >select </option>
         </select>
       </div>
       <div class="col-md-3">
@@ -158,6 +216,26 @@
     </div>
     <button class="mt-5 fs-5 submit text-white">Submit</button>
   </div>
+
+  <!-- carousel -->
+   <div class="carousel">
+  <div class="carousel-track">
+    <!-- Original set of 5 slides -->
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 1"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 2"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 3"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 4"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 5"></div>
+    <!-- Duplicate set of 5 slides for infinite scrolling -->
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 1"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 2"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 3"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 4"></div>
+    <div class="slide"><img src="assests/footer-logo.png" alt="Image 5"></div>
+  </div>
+</div>
+
+
 </div>
 
     <div class="container-fluid p-0">
