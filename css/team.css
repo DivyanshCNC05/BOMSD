@@ -124,3 +124,40 @@
   position: relative;
   z-index: 2;
 }
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+@media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  { 
+    .team-member img 
+    {
+        width: 180px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2;
+    }
+    .team-member {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+   text-align: center;
+      margin-bottom: 40px;
+}
+
+.team-member::before {
+  content: "";
+  position: absolute;
+  top: 85px;   /* Push background slightly down */
+  left: 118px;  /* Push background slightly right */
+  width: 190px;
+  height: 135px;
+  background-color: #b41e1e;
+    
+  z-index: -1; /* Put it behind the image */
+}
+  }

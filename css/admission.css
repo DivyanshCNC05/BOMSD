@@ -36,12 +36,14 @@
   overflow: hidden;
   width: 100%;           /* full width (or adjust as needed) */
   box-sizing: border-box;
+  padding: 10px 0;
 }
 
 /* Flex track: holds all slides in one row */
 .carousel-track {
   display: flex;
   animation: scroll 20s linear infinite; /* continuous scroll */
+  align-items: center;
 }
 
 /* Each slide: show multiple per row via flex-basis */
@@ -75,5 +77,29 @@
 @media (max-width: 480px) {
   .slide {
     flex: 0 0 100%;      /* 1 slide per view */
+  }
+}
+
+    .margin-right-style, .margin-left-style {
+        /* Remove margins on smaller screens */
+        margin: 0 !important;
+    }
+
+    @media (min-width: 768px) {
+        .margin-right-style {
+            margin-right: auto !important;
+        }
+
+        .margin-left-style {
+            margin-left: auto !important;
+        }
+    }
+@media (max-width: 576px) {
+  .slide {
+    padding: 0 0px;
+  }
+
+  .slide img {
+    width: 80px; /* Adjust width for mobile */
   }
 }
