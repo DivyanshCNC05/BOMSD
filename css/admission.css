@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-titl {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .form-section {
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: #f8f9fa;
+    }
+    .upload-box {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      cursor: pointer;
+      background-color: #fff;
+    }
+    .btn-check-status {
+      float: right;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .form-section .submit{
+      background-color: #f05c2b;
+      border: none;
+    }
+    /* Carousel container: hides overflow */
+.carousel {
+  overflow: hidden;
+  width: 100%;           /* full width (or adjust as needed) */
+  box-sizing: border-box;
+}
+
+/* Flex track: holds all slides in one row */
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite; /* continuous scroll */
+}
+
+/* Each slide: show multiple per row via flex-basis */
+.slide {
+  flex: 0 0 20%;         /* 5 slides on wide screens */
+}
+
+/* Ensure images fill their slides */
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Animation: shift left by 50% (i.e. one set of slides) */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Breakpoints for responsiveness */
+@media (max-width: 992px) {
+  .slide {
+    flex: 0 0 33.333%;   /* 3 slides per view */
+  }
+}
+@media (max-width: 600px) {
+  .slide {
+    flex: 0 0 50%;       /* 2 slides per view */
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 100%;      /* 1 slide per view */
+  }
+}
